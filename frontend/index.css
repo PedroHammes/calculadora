@@ -48,3 +48,121 @@ body{
     grid-column: 1/13;
     grid-row: 11/13;
 }
+
+.grid-calculator{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    border: solid 2px rgb(0, 64, 255);
+    gap: 5px;
+    padding: 5px;
+    height: 98%;
+}
+
+.grid-calculator-button{
+    border: solid 2px rgb(0, 64, 255);
+    border-radius: 5px;
+    color: white
+}
+
+#result-area{
+    background-color: aliceblue;
+    grid-column: 1/13;
+    grid-row: 1/5;
+}
+
+#number-7{
+    background-color: blueviolet;
+    grid-column: 1/4;
+    grid-row: 5/7;
+}
+
+#number-8{
+    background-color: blueviolet;
+    grid-column: 4/7;
+    grid-row: 5/7;
+}
+
+#number-9{
+    background-color: blueviolet;
+    grid-column: 7/10;
+    grid-row: 5/7;
+}
+
+#division-symbol{
+    background-color: blueviolet;
+    grid-column: 10/13;
+    grid-row: 5/7;
+}
+
+#number-4{
+    background-color: blueviolet;
+    grid-column: 1/4;
+    grid-row: 7/9;
+}
+
+#number-5{
+    background-color: blueviolet;
+    grid-column: 4/7;
+    grid-row: 7/9;
+}
+
+#number-6{
+    background-color: blueviolet;
+    grid-column: 7/10;
+    grid-row: 7/9;
+}
+
+#multiplication-symbol{
+    background-color: blueviolet;
+    grid-column: 10/13;
+    grid-row: 7/9;
+}
+
+#number-3{
+    background-color: blueviolet;
+    grid-column: 1/4;
+    grid-row: 9/11;
+}
+
+#number-2{
+    background-color: blueviolet;
+    grid-column: 4/7;
+    grid-row: 9/11;
+}
+
+#number-1{
+    background-color: blueviolet;
+    grid-column: 7/10;
+    grid-row: 9/11;
+}
+
+#minus-symbol{
+    background-color: blueviolet;
+    grid-column: 10/13;
+    grid-row: 9/11;
+}
+
+#number-0{
+    background-color: blueviolet;
+    grid-column: 1/4;
+    grid-row: 11/13;
+}
+
+#point{
+    background-color: blueviolet;
+    grid-column: 4/7;
+    grid-row: 11/13;
+}
+
+#equal-sign{
+    background-color: blueviolet;
+    grid-column: 7/10;
+    grid-row: 11/13;
+}
+
+#plus-symbol{
+    background-color: blueviolet;
+    grid-column: 10/13;
+    grid-row: 11/13;
+}
