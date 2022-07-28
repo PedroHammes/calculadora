@@ -1,6 +1,7 @@
 body{
     background-color: black;
     color: aliceblue;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .grid-container{
@@ -68,6 +69,8 @@ body{
 #result-area{
     background-color: aliceblue;
     color: black;
+    font-size: 50px;
+    text-align: right;
     grid-column: 1/13;
     grid-row: 1/5;
 }
