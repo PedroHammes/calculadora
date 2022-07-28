@@ -16,7 +16,9 @@
         <div class="grid-item" id="item-2">2</div>
         <div class="grid-item" id="item-3">
             <div class="grid-calculator">
-                <p class="grid-calculator-button" id="result-area"></p>
+                <div id="result-area">
+                    <p id="result-field"></p>
+                </div>
                 <button type="button" onclick="test(this)" class="grid-calculator-button" id="number-7" value="7">7</button>
                 <button type="button" onclick="test(this)" class="grid-calculator-button" id="number-8" value="8">8</button>
                 <button type="button" onclick="test(this)" class="grid-calculator-button" id="number-9" value="9">9</button>
@@ -34,7 +36,7 @@
                 <button class="grid-calculator-button" id="equal-sign">=</button>
                 <button type="button" onclick="operator(this)" class="grid-calculator-button" id="plus-symbol" value="+">+</button>
                 <button type="button" class="grid-calculator-button" id="C">Clear</button>
-                <button type="button" class="grid-calculator-button" id="CA">Clear All</button>
+                <button type="button" onclick="clearAll()" class="grid-calculator-button" id="CA">Clear All</button>
             </div>
         </div>
         <div class="grid-item" id="item-4">4</div>
