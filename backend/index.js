@@ -1,13 +1,7 @@
-function test(number){
-    let n1 = `${Number(number.value)}`
+function output(button){
+    let char = (button.value)
     let resultField = document.getElementById("result-field")
-    resultField.innerText += `${n1}`
-}
-
-function operator(symbol){
-    let operator = `${symbol.value}`
-    let resultField = document.getElementById("result-field")
-    resultField.innerText += `${operator}`
+    resultField.innerText += `${char}`
 }
 
 function clearAll(){
