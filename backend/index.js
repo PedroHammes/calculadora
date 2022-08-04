@@ -1,10 +1,14 @@
+let input = []
+
 function output(button){
-    let char = (button.value)
+    input += (button.innerText)
     let resultField = document.getElementById("result-field")
-    resultField.innerText += `${char}`
+    resultField.innerText = input
+    return input
 }
 
 function clearAll(){
     let resultField = document.getElementById("result-field")
     resultField.innerText = ""
+    input = ""
 }
