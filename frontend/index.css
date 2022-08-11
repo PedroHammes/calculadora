@@ -3,60 +3,16 @@ body{
     color: aliceblue;
 }
 
-.grid-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    border: solid 2px white;
-    gap: 5px;
-    padding: 5px;
-    height: 980px;
-}
-
-.grid-item{
-    border: solid 2px palevioletred;
-    border-radius: 5px;
-    color: palevioletred;
-}
-
-#item-1{
-    color: yellow;
-    grid-column: 1/13;
-    grid-row: 1/3;
-}
-
-#item-2{
-    color: yellow;
-    grid-column: 1/5;
-    grid-row: 3/11;
-}
-
-#item-3{
-    color: yellow;
-    grid-column: 5/9;
-    grid-row: 3/11;
-}
-
-#item-4{
-    color: yellow;
-    grid-column: 9/13;
-    grid-row: 3/11;
-}
-
-#item-5{
-    color: yellow;
-    grid-column: 1/13;
-    grid-row: 11/13;
-}
-
 .grid-calculator{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    border: solid 2px rgb(0, 64, 255);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    border: solid 2px #9276f0;
+    border-radius: 10px;
     gap: 8px;
     padding: 8px;
-    height: 98%;
+    max-width: 380px;
+    min-width: 280px;
 }
 
 .grid-calculator-button{
@@ -80,8 +36,8 @@ body{
 
 #result-area{
     background-color: #ece4fe;
-    grid-column: 1/13;
-    grid-row: 2/5;
+    grid-column: 1/9;
+    grid-row: 2/6;
     align-items: top;
     border-radius: 10px;
 }
@@ -94,97 +50,97 @@ body{
 }
 
 #CA{
-    grid-column: 1/4;
+    grid-column: 1/3;
     grid-row: 6/7;
 }
 
 #Del{
-    grid-column: 4/7;
+    grid-column: 3/5;
     grid-row: 6/7;
 }
 
 #percent-symbol{
-    grid-column: 7/10;
+    grid-column: 5/7;
     grid-row: 6/7;
 }
 
 #division-symbol{
-    grid-column: 10/13;
+    grid-column: 7/9;
     grid-row: 6/7;
 }
 
 #number-7{
-    grid-column: 1/4;
+    grid-column: 1/3;
     grid-row: 7/8;
 }
 
 #number-8{
-    grid-column: 4/7;
+    grid-column: 3/5;
     grid-row: 7/8;
 }
 
 #number-9{
-    grid-column: 7/10;
+    grid-column: 5/7;
     grid-row: 7/8;
 }
 
 #multiplication-symbol{
-    grid-column: 10/13;
+    grid-column: 7/9;
     grid-row: 7/8;
 }
 
 #number-4{
-    grid-column: 1/4;
+    grid-column: 1/3;
     grid-row: 8/9;
 }
 
 #number-5{
-    grid-column: 4/7;
+    grid-column: 3/5;
     grid-row: 8/9;
 }
 
 #number-6{
-    grid-column: 7/10;
+    grid-column: 5/7;
     grid-row: 8/9;
 }
 
 #plus-symbol{
-    grid-column: 10/13;
+    grid-column: 7/9;
     grid-row: 8/9;
 }
 
 #number-3{
-    grid-column: 1/4;
+    grid-column: 5/7;
     grid-row: 9/10;
 }
 
 #number-2{
-    grid-column: 4/7;
+    grid-column: 3/5;
     grid-row: 9/10;
 }
 
 #number-1{
-    grid-column: 7/10;
+    grid-column: 1/3;
     grid-row: 9/10;
 }
 
 #minus-symbol{
-    grid-column: 10/13;
+    grid-column: 7/9;
     grid-row: 9/10;
 }
 
 #number-0{
-    grid-column: 1/7;
+    grid-column: 1/5;
     grid-row: 10/11;
 }
 
 #point{
-    grid-column: 7/10;
+    grid-column: 5/7;
     grid-row: 10/11;
 }
 
 #equal-sign{
-    grid-column: 10/13;
+    grid-column: 7/9;
     grid-row: 10/11;
     background-color: #9276f0;
     color: #ece4fe;
