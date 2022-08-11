@@ -1,25 +1,37 @@
+const previousInputText = document.querySelector("#result-field")
+const inputFieldText = document.querySelector("#input-field")
 const buttons = document.querySelectorAll(".grid-calculator button")
 
-class Equation{
-    constructor(number1, operation, number2){
-        this.number1 = number1
-        this.operation = operation
-        this.number2 = number2
-    } 
+class Calculator {
+    constructor(previousInputText, inputFieldText){
+        this.previousInputText = previousInputText
+        this.inputFieldText = inputFieldText
+        this.inputField = ""
+    }
+
+    //exibe no visor aquilo que o usuário digita
+    output(digit){
+        this.inputField = digit
+        this.updateScreen()
+    }
+
+    //altera os valores na tela da calculadora
+    updateScreen(){
+        this.inputFieldText.innerText += this.inputField
+    }
 }
 
-
-buttons.forEach((clickedButton) => {
-    if(Number(clickedButton.innerText) >= 0 || clickedButton.innerText == "."){
-        console.log(`Number: ${clickedButton.innerText}`)
-    }else{
-        console.log(`Op: ${clickedButton.innerText}`)
-    }
-})
+const calc = new Calculator (previousInputText, inputFieldText)
 
 buttons.forEach((clickedButton) => {
     clickedButton.addEventListener("click", function(){
-        console.log(clickedButton.innerText)
+        const value = clickedButton.innerText
+        
+        if(Number(value)>=0 || value=="."){
+            calc.output(value)
+        }else{
+            console.log(`Op: ${value}`)
+        }
     })
 })
 //Usando o forEach para percorrer o array buttons.
