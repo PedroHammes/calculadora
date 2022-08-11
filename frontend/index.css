@@ -16,7 +16,7 @@ body{
 }
 
 .grid-calculator-button{
-    border: solid 2px rgb(0, 64, 255);
+    border: solid 2px;
     border-radius: 8px;
     background-color: blueviolet;
     font-size: 20px;
@@ -34,19 +34,28 @@ body{
     border-color: #242424;
 }
 
-#result-area{
+#visor{
     background-color: #ece4fe;
     grid-column: 1/9;
     grid-row: 2/6;
-    align-items: top;
     border-radius: 10px;
+    padding: 0px 6px;
 }
 
 #result-field{
-    padding-right: 8px;
+    background-color:#9276f0;
+    border-radius: 10px;
+    color: #1e1e1e;
+    font-size: 30px;
+    text-align: right;
+}
+
+#input-field{
     color: #1e1e1e;
     font-size: 50px;
     text-align: right;
+    background-color: #a992f2;
+    border-radius: 10px;
 }
 
 #CA{
